@@ -1,0 +1,171 @@
+body{
+    background-color: #f5efe6;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+/* الترحيب */
+
+#welcomePage{
+    text-align: center;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#welcomePage h1{
+    color: darkgreen;
+    font-size: 40px;
+}
+
+#welcomePage p{
+    font-size: 20px;
+    color: brown;
+}
+
+#welcomePage button{
+    background-color: #5c4033;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* الصفحة الرئيسية */
+
+#mainPage{
+    display: none;
+}
+
+/* القائمة */
+
+nav{
+    background-color: #5c4033;
+    padding: 15px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* العناوين */
+
+h1{
+    color: darkgreen;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+h2{
+    color: purple;
+    font-size: 30px;
+    font-style: italic;
+}
+
+/* الفقرات */
+
+p{
+    color: brown;
+    font-size: 20px;
+    text-align: right;
+    line-height: 2;
+}
+
+.paragraph2{
+    text-align: center;
+}
+
+/* الصور */
+
+.images{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #5c4033;
+}
+
+/* الجدول */
+
+table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid #5c4033;
+    padding: 10px;
+    text-align: center;
+}
+
+th{
+    background-color: #d8c3a5;
+}
+
+/* التذييل */
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.footerBox {
+    background-color: #d8c3a5;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #5c4033;
+    text-align: center;
+    width: 90%;
+    max-width: 1000px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+/* الجوال */
+
+@media (max-width: 768px){
+
+    h1{
+        font-size: 28px;
+    }
+
+    img{
+        width: 90%;
+        height: auto;
+    }
+
+    .menu{
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-icon{
+        display: block;
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+}
